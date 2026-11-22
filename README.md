@@ -17,6 +17,7 @@ In my internship, we are investigating the role of IRF4 knockout in melanoma cel
 ### 1. Loading
 ### 2. Quality Control
 **Data:** GSE22036, 54,675 probesets, 4 samples (2 control, 2 IRF4 knockdown)
+
 **Short Summary:** log2 transform, filtering, PCA, IRF4 KD check,
 
 #### Scale check:
@@ -42,7 +43,7 @@ PC2 (33.1%) separates knockdown from control in both replicates, so the knockdow
 PC1 (35.7%) separates replicate 1 from replicate 2 in both groups, suggesting a replicate or batch effect.
 No sample is a clear outlier, so none was excluded.
 
-![PCA of filtered data](results/figures/PCA of filtered data.png)
+![PCA of filtered data](results/figures/pca_filtered.png)
 
 #### IRF4 Knockdown Check: 
 To check whether the knockdown was visible at the transcript level, I looked
