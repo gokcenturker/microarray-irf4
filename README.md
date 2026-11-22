@@ -6,12 +6,12 @@ Which genes' expression change when IRF4 gene is knocked down in T cells and wha
 In my internship, we are investigating the role of IRF4 knockout in melanoma cells. As a side project to improve my coding skills, I wanted to work on another cell line so that I have a deeper understanding on our target gene in different pathways.
 ## Data
 - Dataset: GSE22036 (Refaat et al., 2010)
-- Organism: Homo sapiens
+- Organism / Cell Type: Homo sapiens, HuT-102 cells (human cutaneous T cell lymphoma)
 - Platform: GPL570	[HG-U133_Plus_2] Affymetrix Human Genome U133 Plus 2.0 Array
-- Desing: Control-1 
-          Control-2
-          siRNA-IRF4-1
-          siRNA-IRF4-2
+- Desing: -Control-1 
+          -Control-2
+          -siRNA-IRF4-1
+          -siRNA-IRF4-2
 
 ## Methods
 1.
