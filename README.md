@@ -14,10 +14,46 @@ In my internship, we are investigating the role of IRF4 knockout in melanoma cel
           -siRNA-IRF4-2
 
 ## Methods
-1.
-2.
-3.
-4.
+### 1. Loading
+### 2. Quality Control
+Data: GSE22036, 54,675 probesets, 4 samples (2 control, 2 IRF4 knockdown)
+Scale check:
+The raw values were not on a log scale (maximum far above 16), so
+I applied a log2 transformation. After transforming, values ranged from about
+-3 to 16, and the median was similar in all four samples (about 5.5), so the
+arrays looked comparable.
+Low-expression filtering: 
+The density plot showed a first peak of probes with
+background-level signal that ended at around log2 = 4. I kept only probes with
+log2 expression > 4 in at least 2 samples (the size of one group, so that genes
+expressed in only one condition are not lost).
+- Probes before filtering: 54,675
+- Probes removed: 13,441 (24.6%)
+- Probes kept: 41,234 (75.4%)
+PCA :
+To answer the question "Do the samples differ from each other in the way I expect?"
+If knockdown and control separate, the treatment changed the expression profile, and the comparison is worth running.
+Resulst:
+PC2 (33.1%) separates knockdown from control in both replicates, so the knockdown has an effect on the expression.
+PC1 (35.7%) separates replicate 1 from replicate 2 in both groups, suggesting a replicate or batch effect.
+No sample is a clear outlier, so none was excluded.
+! [PCA of filtered data](results/figures/PCA of filtered data.png)
+IRF4 Knockdown Check: 
+To check whether the knockdown was visible at the transcript level, I looked
+at the three probesets mapped to IRF4 (204562_at, 216986_s_at, 216987_at).
+- 204562_at (the main, highly expressed IRF4 probeset): log2 expression was
+  slightly lower in knockdown (12.57) than in control (12.88), a decrease of
+  about 0.3 log2 units (roughly 19%).
+- 216986_s_at: lower in knockdown (7.54 vs 8.08, about 31% lower), but this
+  probeset has much lower expression.
+- 216987_at: values near background level.
+Interpretation: IRF4 expression decreased, however but the
+effect on mRNA is modest and based on only 2 samples per group, so the
+knockdown is only weakly supported at the transcript level. The PCA shows that
+knockdown samples differ consistently from controls, so the treatment did
+change the expression profile.
+### 3.
+### 4.
 
 ## Proejct structure
 
