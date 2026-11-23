@@ -1,7 +1,9 @@
-# microarray-irf4
+# IRF4 knockdown vs. control in human T cells: differential expression analysis of public microarray data (GSE22036)
 
 ## Question
 Which genes' expression change when IRF4 gene is knocked down in T cells and what are the biological functions of these genes?
+## What is IRF4
+A transcription factor in lymphocyte differentiation and function. It is also linked to melanoma and pigmentation.
 ## Why was this question chosen?
 In my internship, we are investigating the role of IRF4 knockout in melanoma cells. As a side project to improve my coding skills, I wanted to work on another cell line so that I have a deeper understanding on our target gene in different pathways.
 ## Data
@@ -62,14 +64,15 @@ change the expression profile.
 ### 3.
 ### 4.
 
-## Proejct structure
-
-## How to run
+## Project structure
 
 ## Key results
-
+![Density Plot of Groups](results/figures/Density.png)
+![Bar Plot of Groups](results/figures/qr_barplot.png)
 ## Limitations
-
+Low statistical power since n = 2
+IRF4 is not fully knockout, so some of it remains
+Limitation form microarray analysis (low statistical power compared to RNA-seq)
 ## About this project
 I did this analysis as a beginner project to learn bioinformatics.
 I used an AI assistant to help me learn R and Git and to debug errors;
