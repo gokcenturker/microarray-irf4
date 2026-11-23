@@ -68,7 +68,8 @@ change the expression profile.
 
 ## Key results
 ![Density Plot of Groups](results/figures/Density.png)
-![Bar Plot of Groups](results/figures/qr_barplot.png)
+
+![Bar Plot of Groups](results/figures/qc_barplot.png)
 ## Limitations
 Low statistical power since n = 2
 IRF4 is not fully knockout, so some of it remains
